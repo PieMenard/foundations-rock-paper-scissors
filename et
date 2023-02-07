@@ -1,0 +1,23 @@
+[33mcommit fb85ea6e99b3235ca15421684f3e67ea1a93add6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: PieMenard <pinedo.m.gustavo@gmail.com>
+Date:   Tue Feb 7 12:11:15 2023 -0400
+
+    Complete rock_paper_scissors first working draft
+
+[33mcommit aadf9a19a444325d8ac6bf6894932318237f9bdb[m
+Author: PieMenard <pinedo.m.gustavo@gmail.com>
+Date:   Mon Feb 6 16:23:59 2023 -0400
+
+    Start attempt 01
+
+[33mcommit 3b06a3aa727bdfd6c4e534e00bf7fa1274fc7571[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mrevisit[m[33m)[m
+Author: PieMenard <pinedo.m.gustavo@gmail.com>
+Date:   Thu Jan 26 15:27:54 2023 -0400
+
+    Complete first draft of game
+
+[33mcommit e93f49f1d9b149030b2446b6ca00d6da63ec2180[m
+Author: PieMenard <110061246+PieMenard@users.noreply.github.com>
+Date:   Thu Jan 26 12:03:09 2023 -0400
+
+    Initial commit

@@ -2,6 +2,7 @@ let pcScore = 0;
 let playerScore = 0;
 const winScore = 5;
 
+//creating DOM elements
 const resultsBox = document.querySelector('.results');
 const plays = document.createElement('p');
 const score = document.createElement('p');
@@ -14,7 +15,7 @@ resultsBox.appendChild(roundDetails);
 resultsBox.appendChild(score);
 resultsBox.appendChild(winner);
 
-const buttons = Array.from(document.querySelectorAll('button'));
+const buttons = document.querySelectorAll('button');
 
 
 //generate computer choice
@@ -35,8 +36,7 @@ function getComputerChoice(){
     }
 }
 
-//compare both plays and determine winner or tie
-
+//compare player choice with computer choice and update the score
 function playRound(playerSelection){
 
     const computerSelection = getComputerChoice();
@@ -81,36 +81,33 @@ function playRound(playerSelection){
     
 }
 
-function playerPlay(){
+//get player choice from button input, play round wth that input
+function game(){
     let clickedButton = "";
   
-    //console.log(buttons);
-    
     buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        clickedButton = button.id.toString();
+        clickedButton = button.id;
         playRound(clickedButton);
       
     });
     });
 }
-function game() {
 
-        playerPlay();
-       
-}
-
+//end the game and ask to replay
 function gameOver() {
     buttons.forEach(button => {
         button.disabled = true;
     });
     resultsBox.appendChild(restart);
-    restart.textContent = "Play again?";
+    restart.textContent = "Play again";
     restart.addEventListener('click', () => {
         window.location.reload();
     });
 }
 
+
+//keep info on the current score, end the game if someone wins
 function updateScore (){
     
     score.textContent = "PC: "+ pcScore + " Player: " + playerScore; 
@@ -124,11 +121,6 @@ function updateScore (){
     }
 
 }
-
-    
-
-
-
 
 game();
 
